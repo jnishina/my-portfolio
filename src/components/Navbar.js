@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <header className="nav-bar">
       <a href="/" className="nav-bar__home">
-        <strong>Jordan</strong> 西名
+        Jordan 西名
       </a>
 
       <nav className="nav-bar__links">
