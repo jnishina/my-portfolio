@@ -6,7 +6,7 @@ import cherryBlossomFalling from '../assets/cherry_blossom_falling.gif';
 
 const Title = () => {
   return (
-    <div className="container">
+    <div className="container container--title">
       <div className="title-title">
         <h3 className="title-title__main">Life of a Full-Stack Dev</h3>
         <h4 className="title-title__sub">Vol. 1: Days of Youth</h4>

@@ -4,6 +4,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 
 import NavBar from './components/Navbar';
 import Title from './components/Title';
+import About from './components/About';
 
 const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;
@@ -21,7 +22,7 @@ const App = () => {
     },
     {
       page: 'About',
-      component: <h3>About</h3>,
+      component: <About />,
     },
     {
       page: 'Work',

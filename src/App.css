@@ -4,26 +4,36 @@ html {
 
 body {
   font-family: 'Jost', sans-serif;
-  color: #044b05;
+  color: #000;
 }
 
 .title-title {
   text-align: center;
   color: #044b05;
-  margin-bottom: 2.5em;
+  min-width: 0;
+  min-height: 0;
+  margin-bottom: 6%;
+  margin-top: 10%;
 }
 
 .container {
-  height: 500px;
+  height: 100%;
+  display: flex;
+}
+
+.container--title {
+  flex-direction: column;
+}
+
+.container--about {
+  padding: 118px 30px 50px;
+  align-content: center;
+  justify-content: space-between;
 }
 
 .avatar-pic {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  z-index: -1;
+  margin: auto auto 0;
+  min-height: 0;
   max-width: 45vw;
   max-height: 60vh;
 }
@@ -62,8 +72,9 @@ a {
 }
 
 .nav-bar {
-  position: relative;
-  padding: 15px 30px 25px 30px;
+  position: absolute;
+  width: 100%;
+  padding: 15px 0 25px;
   z-index: 100;
   display: flex;
   flex-direction: row;
@@ -96,6 +107,7 @@ a {
 }
 
 .nav-bar__links {
+  margin-right: 30px;
   font-size: 1.2em;
   font-weight: 300;
   display: flex;
@@ -107,6 +119,7 @@ a {
 }
 
 .nav-bar__home {
+  margin-left: 30px;
   font-weight: 400;
   text-decoration: none;
   font-size: 1.2em;
@@ -138,4 +151,65 @@ a {
   z-index: -2;
   width: 40%;
   height: 70%;
+}
+
+.left-panel__border {
+  padding: 3px;
+  width: 40vw;
+  height: auto;
+  max-width: 800px;
+  background-color: #000;
+  clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.about__left-panel {
+  width: 40vw;
+  height: 100%;
+  max-width: 800px;
+  background-image: url("assets/pumpkins.jpg");
+  background-position: center;
+  clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.right-panel__border {
+  padding: 3px;
+  width: 40vw;
+  height: auto;
+  max-width: 800px;
+  background-color: #000;
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.about__right-panel {
+  width: 40vw;
+  height: 100%;
+  max-width: 800px;
+  background-image: url("assets/pumpkins.jpg");
+  background-position: center;
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.text-bubble--type-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 30vh;
+  min-width: 120px;
+  min-height: 240px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+.left-panel__bubble-one {
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  z-index: 100;
+}
+
+.type-one--text {
+  font-size: calc(14px + 0.1vw);
 }
